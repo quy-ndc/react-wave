@@ -1,0 +1,14 @@
+{
+  "name": "@reactwave/ui-mobile",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-native": ">=0.73.0"
+  }
+}
