@@ -1,17 +1,11 @@
 {
-    "extends": "@reactwave/typescript-config/react-library.json",
+    "extends": "../../tsconfig.base.json",
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "declaration": true,
         "outDir": "dist",
-        "jsx": "react-jsx",
-        "moduleResolution": "Node",
-        "resolveJsonModule": true,
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "declaration": true,
+        "jsx": "react-jsx"
     },
-    "include": ["**/*.ts", "**/*.json"]
+    "include": [
+        "src"
+    ]
 }

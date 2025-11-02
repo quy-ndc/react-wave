@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "jsx": "react-jsx",
+        "moduleResolution": "Node",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": ".",
+        "paths": {
+            "@configs/*": [
+                "packages/configs/*"
+            ],
+            "@ui-mobile/*": [
+                "packages/ui-mobile/src/*"
+            ],
+            "@ui-web/*": [
+                "packages/ui-web/src/*"
+            ]
+        }
+    },
+    "include": [
+        "packages",
+        "apps"
+    ]
+}
