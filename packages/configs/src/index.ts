@@ -1,6 +1,6 @@
-import { flatten, toMap } from "./utils";
-import colorsJson from "./jsons/colors.json";
-import layoutJsonRaw from "./jsons/layout.json";
+import { flatten, toMap } from "../utils";
+import colorsJson from "../jsons/colors.json";
+import layoutJsonRaw from "../jsons/layout.json";
 
 type ColorsFlat = Record<string, string>;
 
@@ -55,7 +55,7 @@ const layoutJson =
 // Final tokens (DOT-ACCESS ONLY)
 export const tokens = {
     colors: buildColors(colorsJson as any),
-    layout: layoutJson as import("./models/layout").Layout
+    layout: layoutJson as import("../models/layout").Layout
 } as const;
 
 export type Tokens = typeof tokens;
