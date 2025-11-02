@@ -1,0 +1,13 @@
+{
+  "name": "@reactwave/configs",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+
+  "main": "index.ts",
+  "types": "index.ts",
+  "exports": {
+    ".": { "types": "./index.ts", "default": "./index.ts" },
+    "./*": { "types": "./*", "default": "./*" }
+  }
+}

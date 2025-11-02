@@ -1,0 +1,99 @@
+{
+  "colors": {
+    "text-primary": "#0f172a",
+    "text-secondary": "#0f172a",
+    "text-muted": "#0f172a",
+    "text-inverse": "#ffffff",
+    "background-primary": "#ffffff",
+    "background-secondary": "#ffffff",
+    "color-primary": "#0ea5e9",
+    "color-secondary": "#9333ea",
+    "color-success": "#16a34a",
+    "color-warning": "#f59e0b",
+    "color-danger": "#ef4444",
+    "status-success": "#0dd858",
+    "status-onSuccess": "#000000",
+    "status-warning": "#f19300",
+    "status-onWarning": "#000000",
+    "status-danger": "#ef0000",
+    "status-onDanger": "#ffffff",
+    "status-info": "#00a3f1",
+    "status-onInfo": "#ffffff",
+    "border-default": "#d6dae1",
+    "border-strong": "#9ba6b6"
+  },
+  "palette": {
+    "primary": {
+      "50": "#f1fafe",
+      "100": "#def3fc",
+      "200": "#bde7f9",
+      "300": "#93d7f6",
+      "400": "#5fc4f1",
+      "500": "#2cb1ed",
+      "600": "#00a3f1",
+      "700": "#0093ef",
+      "800": "#0083ec",
+      "900": "#0075ea"
+    },
+    "secondary": {
+      "50": "#f8f1fd",
+      "100": "#eedffb",
+      "200": "#ddc0f7",
+      "300": "#c797f2",
+      "400": "#ac65eb",
+      "500": "#912aee",
+      "600": "#7900eb",
+      "700": "#6300e7",
+      "800": "#4a00e3",
+      "900": "#3700e0"
+    },
+    "success": {
+      "50": "#f2fdf6",
+      "100": "#e0faea",
+      "200": "#c1f5d5",
+      "300": "#9aefb9",
+      "400": "#6ae798",
+      "500": "#39df76",
+      "600": "#0dd858",
+      "700": "#00de3a",
+      "800": "#00d91b",
+      "900": "#00d502"
+    },
+    "warning": {
+      "50": "#fef9f1",
+      "100": "#fdf1de",
+      "200": "#fbe3bc",
+      "300": "#f8d291",
+      "400": "#f4bc5c",
+      "500": "#f1a628",
+      "600": "#f19300",
+      "700": "#ef8100",
+      "800": "#ec6e00",
+      "900": "#ea5e00"
+    },
+    "danger": {
+      "50": "#fdf1f1",
+      "100": "#fbdfdf",
+      "200": "#f8bfbf",
+      "300": "#f39595",
+      "400": "#ee6363",
+      "500": "#f22727",
+      "600": "#ef0000",
+      "700": "#ec0000",
+      "800": "#e90000",
+      "900": "#e70000"
+    },
+    "neutral": {
+      "50": "#f6f7f9",
+      "100": "#eaedf0",
+      "200": "#d6dae1",
+      "300": "#bbc3cd",
+      "400": "#9ba6b6",
+      "500": "#7a899e",
+      "600": "#5b6e8b",
+      "700": "#405778",
+      "800": "#223c63",
+      "900": "#0a2752"
+    }
+  }
+}
