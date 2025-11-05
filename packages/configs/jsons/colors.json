@@ -6,7 +6,9 @@
     "success": "#1fb84d",
     "warning": "#ff6600",
     "danger": "#e61f1f",
-    "info": "#1a66ff"
+    "info": "#1a66ff",
+    "ghost": "#00000000",
+    "fade": "#F2F2F2"
   },
   "palette": {
     "red": {
