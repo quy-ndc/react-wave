@@ -5,38 +5,46 @@ import { ButtonRound, ButtonSize, ButtonVariant } from "./enum"
 
 export const button_variant = StyleSheet.create({
     [ButtonVariant.PRIMARY]: {
-        backgroundColor: colors.colors.primary
-    },
-    [ButtonVariant.DANGER]: {
-        backgroundColor: colors.colors.danger
-    },
-    [ButtonVariant.OUTLINE]: {
-        backgroundColor: colors.colors.ghost,
+        backgroundColor: colors.colors.primary,
         borderColor: colors.colors.primary,
         borderWidth: layout.layouts.width.sm
     },
+    [ButtonVariant.DANGER]: {
+        backgroundColor: colors.colors.danger,
+        borderColor: colors.colors.danger,
+        borderWidth: layout.layouts.width.sm
+    },
+    [ButtonVariant.OUTLINE]: {
+        backgroundColor: colors.colors.ghost,
+        borderColor: colors.colors.secondary,
+        borderWidth: layout.layouts.width.sm
+    },
     [ButtonVariant.GHOST]: {
-        backgroundColor: colors.colors.ghost
+        backgroundColor: colors.colors.ghost,
+        borderColor: colors.colors.ghost,
+        borderWidth: layout.layouts.width.sm
     },
     [ButtonVariant.LINK]: {
-        backgroundColor: colors.colors.ghost
+        backgroundColor: colors.colors.ghost,
+        borderColor: colors.colors.ghost,
+        borderWidth: layout.layouts.width.sm
     }
 })
 
 export const button_size = StyleSheet.create({
     [ButtonSize.SMALL]: {
-        paddingVertical: layout.layouts.spacing.sm,
-        paddingHorizontal: layout.layouts.spacing.md,
+        paddingVertical: layout.layouts.padding.md,
+        paddingHorizontal: layout.layouts.padding.lg,
         borderRadius: layout.layouts.radius.sm,
     },
     [ButtonSize.DEFAULT]: {
-        paddingVertical: layout.layouts.spacing.md,
-        paddingHorizontal: layout.layouts.spacing.lg,
+        paddingVertical: layout.layouts.padding.lg,
+        paddingHorizontal: layout.layouts.padding.xl,
         borderRadius: layout.layouts.radius.md,
     },
     [ButtonSize.LARGE]: {
-        paddingVertical: layout.layouts.spacing.lg,
-        paddingHorizontal: layout.layouts.spacing.xl,
+        paddingVertical: layout.layouts.padding.xl,
+        paddingHorizontal: layout.layouts.padding["2xl"],
         borderRadius: layout.layouts.radius.lg,
     },
 })

@@ -1,4 +1,4 @@
-import { Pressable, PressableProps } from "react-native"
+import { Pressable, PressableProps, StyleProp, ViewStyle } from "react-native"
 import { button_variant, button_size, button_round, button_pressed } from "./style"
 import { ButtonRound, ButtonSize, ButtonVariant } from "./enum"
 
@@ -6,6 +6,7 @@ type Prop = PressableProps & {
     variant?: ButtonVariant,
     size?: ButtonSize,
     rounded?: ButtonRound,
+    style?: StyleProp<ViewStyle>,
 }
 
 export default function Button({
@@ -13,6 +14,7 @@ export default function Button({
     variant = ButtonVariant.PRIMARY,
     size = ButtonSize.DEFAULT,
     rounded = ButtonRound.DEFAULT,
+    style,
     ...pressableProps
 }: Prop) {
 
@@ -20,6 +22,7 @@ export default function Button({
         <Pressable
             {...pressableProps}
             style={({ pressed }) => [
+                style,
                 button_variant[variant],
                 button_size[size],
                 button_round[rounded],
