@@ -16,7 +16,7 @@ export const button_variant = StyleSheet.create({
     },
     [ButtonVariant.OUTLINE]: {
         backgroundColor: colors.colors.ghost,
-        borderColor: colors.palette.gray[200],
+        borderColor: colors.colors.secondary,
         borderWidth: layout.layouts.width.sm
     },
     [ButtonVariant.GHOST]: {
