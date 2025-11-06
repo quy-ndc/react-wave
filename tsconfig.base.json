@@ -10,16 +10,15 @@
         "skipLibCheck": true,
         "resolveJsonModule": true,
         "forceConsistentCasingInFileNames": true,
-        "baseUrl": ".",
         "paths": {
             "@configs/*": [
-                "packages/configs/*"
+                "./packages/configs/*"
             ],
             "@ui-mobile/*": [
-                "packages/ui-mobile/src/*"
+                "./packages/ui-mobile/src/*"
             ],
             "@ui-web/*": [
-                "packages/ui-web/src/*"
+                "./packages/ui-web/src/*"
             ]
         }
     },
