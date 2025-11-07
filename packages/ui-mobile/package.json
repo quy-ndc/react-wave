@@ -1,14 +1,26 @@
 {
   "name": "@reactwave/ui-mobile",
   "version": "1.0.0",
+  "description": "Reusable React Native UI components built on shared configs.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch"
+    "clean": "rimraf dist",
+    "build": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "@reactwave/configs": "^1.0.0"
   },
   "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
     "react": "^19.0.0",
     "react-native": ">=0.73.0"
-  }
+  },
+  "license": "MIT"
 }

@@ -3,13 +3,21 @@
     "compilerOptions": {
         "target": "ESNext",
         "module": "ESNext",
-        "jsx": "react-jsx",
-        "moduleResolution": "Node",
+        "lib": [
+            "ES2017",
+            "DOM"
+        ],
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "resolveJsonModule": true,
         "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "noEmit": false,
         "paths": {
             "@configs/*": [
                 "./packages/configs/*"
@@ -25,5 +33,9 @@
     "include": [
         "packages",
         "apps"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
     ]
 }
