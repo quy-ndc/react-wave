@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native"
-import layout from "../../../../configs/jsons/layout.json"
-import colors from "../../../../configs/jsons/colors.json"
+import layout from "@configs/jsons/layout.json"
+import colors from "@configs/jsons/colors.json"
 import { ButtonRound, ButtonSize, ButtonVariant } from "./enum"
 
 export const button_variant = StyleSheet.create({
