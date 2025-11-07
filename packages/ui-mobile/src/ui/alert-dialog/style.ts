@@ -1,6 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native"
-import layouts from "../../../../configs/jsons/layout.json"
-import colors from "../../../../configs/jsons/colors.json"
+import layouts from "@configs/jsons/layout.json"
+import colors from "@configs/jsons/colors.json"
 import { ButtonAlignment, MainTextSize, SubTextSize } from "./enum"
 import { ButtonVariant } from "../button/enum"
 
