@@ -9,22 +9,21 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "next": "16.0.1",
+    "@reactwave/configs": "*",
     "@reactwave/ui-web": "*",
-    "@reactwave/configs": "*"
+    "next": "16.0.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@reactwave/configs": "*",
+    "@reactwave/ui-web": "*",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "@reactwave/ui-web": "*",
-    "@reactwave/configs": "*",
-    "tailwindcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "16.0.1"
+    "eslint-config-next": "16.0.1",
+    "typescript": "^5"
   }
 }
