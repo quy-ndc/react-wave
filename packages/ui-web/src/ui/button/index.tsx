@@ -4,11 +4,12 @@ import s from './style.module.css'
 
 export { ButtonRound, ButtonSize, ButtonVariant } from "./enum"
 
-export type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "style"> & {
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
     variant?: ButtonVariant;
     size?: ButtonSize;
     rounded?: ButtonRound;
     loading?: boolean;
+    hover?: boolean;
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
@@ -19,6 +20,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
         size = ButtonSize.DEFAULT,
         rounded = ButtonRound.DEFAULT,
         loading = false,
+        hover = false,
         disabled,
         ...rest
     },
@@ -34,12 +36,13 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
             data-variant={variant}
             data-size={size}
             data-rounded={rounded}
+            data-hover={hover}
             disabled={isDisabled}
             aria-busy={loading || undefined}
             {...rest}
         >
             {loading ? <span className={s.spinner} aria-hidden /> : null}
-            <span className={s.label}>{children}</span>
+            {children}
         </button>
     );
 });
