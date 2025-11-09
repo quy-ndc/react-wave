@@ -1,23 +1,23 @@
-export enum ButtonVariant {
-    PRIMARY = "PRIMARY",
-    SECONDARY = "SECONDARY",
-    OUTLINE = "OUTLINE",
-    GHOST = "GHOST",
-    DANGER = "DANGER",
-}
+export const ButtonVariant = {
+    PRIMARY: "primary",
+    DANGER: "danger",
+    OUTLINE: "outline",
+    GHOST: "ghost",
+    LINK: "link",
+} as const
 
-export enum ButtonSize {
-    XS = "XS",
-    SM = "SM",
-    DEFAULT = "DEFAULT",
-    LG = "LG",
-    XL = "XL",
-}
+export const ButtonSize = {
+    SMALL: "small",
+    DEFAULT: "default",
+    LARGE: "large",
+} as const
 
-export enum ButtonRound {
-    NONE = "NONE",
-    SM = "SM",
-    DEFAULT = "DEFAULT",
-    LG = "LG",
-    FULL = "FULL",
-}
+export const ButtonRound = {
+    SMALL: "small",
+    DEFAULT: "default",
+    FULL: "full",
+} as const
+
+export type ButtonVariant = typeof ButtonVariant[keyof typeof ButtonVariant]
+export type ButtonSize = typeof ButtonSize[keyof typeof ButtonSize]
+export type ButtonRound = typeof ButtonRound[keyof typeof ButtonRound]
