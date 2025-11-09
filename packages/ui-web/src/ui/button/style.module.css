@@ -1,8 +1,8 @@
 .btn {
     /* defaults (có thể override bằng data-*) */
-    --btn-bg: var(--palette-blue-400);
+    --btn-bg: var(--color-primary);
     --btn-fg: var(--color-inverse);
-    --btn-border: var(--palette-blue-400);
+    --btn-border: var(--color-secondary);
     --btn-shadow: 0 1px 1px rgb(0 0 0 / 0.05);
 
     appearance: none;
@@ -18,10 +18,13 @@
     cursor: pointer;
     box-shadow: var(--btn-shadow);
     user-select: none;
-    transition: background-color .12s, color .12s, border-color .12s, filter .12s, transform .06s;
 }
 
 /* states */
+.btn[data-hover="true"]:hover:not(:disabled):not([aria-disabled="true"]) {
+    opacity: 0.8;
+}
+
 .btn:disabled,
 .btn[aria-disabled="true"] {
     opacity: .5;
@@ -33,23 +36,24 @@
 .btn[aria-pressed="true"] {
     transform: translateY(.5px);
     filter: brightness(.96);
+    box-shadow: var(--btn-shadow);
 }
 
 /* ===== Variants via data-attributes ===== */
 .btn[data-variant="primary"] {
-    --btn-bg: var(--palette-blue-400);
+    --btn-bg: var(--color-primary);
     --btn-fg: var(--color-inverse);
-    --btn-border: var(--palette-blue-400);
+    --btn-border: var(--color-secondary);
 }
 
 .btn[data-variant="outline"] {
     --btn-bg: transparent;
     --btn-fg: var(--color-primary);
-    --btn-border: var(--palette-gray-200);
+    --btn-border: var(--color-tertiary);
 }
 
 .btn[data-variant="outline"]:hover {
-    background: var(--palette-gray-50);
+    background: var(--color-fade);
 }
 
 .btn[data-variant="ghost"] {
@@ -59,7 +63,7 @@
 }
 
 .btn[data-variant="ghost"]:hover {
-    background: var(--palette-gray-50);
+    background: var(--color-ghost);
 }
 
 .btn[data-variant="danger"] {

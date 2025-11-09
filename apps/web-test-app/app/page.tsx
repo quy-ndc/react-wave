@@ -8,11 +8,11 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <div style={{ display: "flex", gap: 12 }}>
-          <Button>Default</Button>
-          <Button variant={ButtonVariant.OUTLINE}>Outline</Button>
-          <Button variant={ButtonVariant.PRIMARY} rounded={ButtonRound.FULL}>Primary</Button>
-          <Button variant={ButtonVariant.DANGER} disabled>Delete</Button>
-          <Button variant={ButtonVariant.SECONDARY} loading>Loading...</Button>
+          <Button hover>Default</Button>
+          <Button variant={ButtonVariant.OUTLINE} hover style={{ color: "red" }}>Outline</Button>
+          <Button variant={ButtonVariant.PRIMARY} rounded={ButtonRound.FULL} hover>Primary</Button>
+          <Button variant={ButtonVariant.DANGER} disabled hover>Delete</Button>
+          <Button variant={ButtonVariant.LINK} loading hover>Loading...</Button>
         </div>
         <Image
           className="dark:invert"
