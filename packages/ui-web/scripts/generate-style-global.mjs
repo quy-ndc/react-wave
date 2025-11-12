@@ -50,12 +50,13 @@ const emit = (colors, layout) => {
         ["width", "width"],
         ["height", "height"],
         ["lineHeight", "lh"],
+        ["opacity", "opacity"]
     ];
     for (const [groupKey, prefix] of scalarGroups) {
         const group = layouts[groupKey];
         if (group && typeof group === "object") {
             for (const [k, v] of Object.entries(group)) {
-                const withUnit = typeof v === "number" ? `${v}px` : v;
+                const withUnit = typeof v === "number" ? `${v}${prefix === "opacity" ? "" : "px"}` : v;
                 lines.push(`  --${prefix}-${kebab(k)}: ${withUnit};`);
             }
         }

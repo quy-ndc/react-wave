@@ -100,6 +100,17 @@
   --width-md: 1.5px;
   --width-lg: 2px;
   --width-xl: 2.5px;
+  --opacity-full: 1;
+  --opacity-xs: 0.9;
+  --opacity-sm: 0.8;
+  --opacity-md: 0.7;
+  --opacity-lg: 0.6;
+  --opacity-xl: 0.5;
+  --opacity-2xl: 0.4;
+  --opacity-3xl: 0.3;
+  --opacity-4xl: 0.2;
+  --opacity-5xl: 0.1;
+  --opacity-none: 0;
   --breakpoints-xs: 320;
   --breakpoints-sm: 640;
   --breakpoints-md: 768;

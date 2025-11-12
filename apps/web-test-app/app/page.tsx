@@ -9,9 +9,10 @@ export default function Home() {
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <div style={{ display: "flex", gap: 12 }}>
           <Button hover>Default</Button>
-          <Button variant={ButtonVariant.OUTLINE} hover style={{ color: "red" }}>Outline</Button>
+          <Button variant={ButtonVariant.OUTLINE} hover>Outline</Button>
           <Button variant={ButtonVariant.PRIMARY} rounded={ButtonRound.FULL} hover>Primary</Button>
-          <Button variant={ButtonVariant.DANGER} disabled hover>Delete</Button>
+          <Button variant={ButtonVariant.GHOST} rounded={ButtonRound.FULL} hover>Ghost</Button>
+          <Button variant={ButtonVariant.DANGER} hover>Delete</Button>
           <Button variant={ButtonVariant.LINK} loading hover>Loading...</Button>
         </div>
         <Image

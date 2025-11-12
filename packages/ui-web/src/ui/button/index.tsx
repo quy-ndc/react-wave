@@ -26,8 +26,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
     },
     ref
 ) {
-    const isDisabled = disabled || loading;
-    const cls = [s.btn, className].filter(Boolean).join(" ");
+    const isDisabled = disabled || loading
+    const cls = [s.btn, className].filter(Boolean).join(" ")
 
     return (
         <button

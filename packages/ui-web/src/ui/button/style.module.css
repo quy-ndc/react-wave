@@ -1,12 +1,11 @@
 .btn {
-    /* defaults (có thể override bằng data-*) */
     --btn-bg: var(--color-primary);
     --btn-fg: var(--color-inverse);
-    --btn-border: var(--color-secondary);
+    --btn-border: var(--color-tertiary);
     --btn-shadow: 0 1px 1px rgb(0 0 0 / 0.05);
 
     appearance: none;
-    border: 1px solid var(--btn-border);
+    border: var(--width-sm) solid var(--btn-border);
     background: var(--btn-bg);
     color: var(--btn-fg);
     font-weight: 600;
@@ -14,7 +13,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5ch;
+    gap: var(--gap-7xl);
     cursor: pointer;
     box-shadow: var(--btn-shadow);
     user-select: none;
@@ -22,7 +21,7 @@
 
 /* states */
 .btn[data-hover="true"]:hover:not(:disabled):not([aria-disabled="true"]) {
-    opacity: 0.8;
+    opacity: var(--opacity-sm);
 }
 
 .btn:disabled,
@@ -63,7 +62,7 @@
 }
 
 .btn[data-variant="ghost"]:hover {
-    background: var(--color-ghost);
+    background: var(--color-fade);
 }
 
 .btn[data-variant="danger"] {
@@ -85,17 +84,17 @@
 
 /* ===== Sizes ===== */
 .btn[data-size="small"] {
-    padding: var(--pad-sm) var(--pad-md);
+    padding: var(--pad-md) var(--pad-lg);
     font-size: var(--text-sm);
 }
 
 .btn[data-size="default"] {
-    padding: var(--pad-md) var(--pad-lg);
+    padding: var(--pad-lg) var(--pad-xl);
     font-size: var(--text-md);
 }
 
 .btn[data-size="large"] {
-    padding: var(--pad-lg) var(--pad-xl);
+    padding: var(--pad-xl) var(--pad-2xl);
     font-size: var(--text-lg);
 }
 
